@@ -37,22 +37,22 @@ let active = false; // exempel för att visa att du kan lägga till klass för a
 
 let achievements = [
     {
-        description: 'Museet är redo att öppna, grattis! ',
+        description: 'woho nu kan vi döda fler lite lite snabbare!',
         requiredUpgrades: 1,
         acquired: false,
     },
     {
-        description: 'Nu börjar det likna något, fortsätt gräva!',
+        description: 'Går långsammare än jag trodde...',
         requiredUpgrades: 10,
         acquired: false,
     },
     {
-        description: 'Klickare, med licens att klicka!',
+        description: 'Sakta men säkert...',
         requiredClicks: 10,
         acquired: false,
     },
     {
-        description: 'Tac-2 god!',
+        description: 'Nu börjar de likna något!',
         requiredClicks: 10000,
         acquired: false,
     },
@@ -163,22 +163,22 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Sop',
+        name: 'Soldater',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Kvalitetsspade',
+        name: 'Större vapen',
         cost: 50,
         clicks: 2,
     },
     {
-        name: 'Skottkärra',
+        name: 'Bomber',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Grävmaskin',
+        name: 'Nuke ',
         cost: 1000,
         amount: 100,
     },
