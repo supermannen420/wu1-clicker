@@ -84,7 +84,7 @@ audio {
 
 .hero img {
     width: 100%;
-    height: 40vh;
+    height: 17vh;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
@@ -118,6 +118,7 @@ audio {
 .game-currency {
     list-style: none;
     padding: 0;
+    background-color: blue;
 }
 
 /* game-currency är en lista med list items */
@@ -125,6 +126,7 @@ audio {
     display: flex;
     justify-content: space-between;
     gap: var(--space-xs-s);
+    
 }
 
 @media (max-width: 30rem) {
@@ -133,6 +135,7 @@ audio {
     }
     .game-controls {
         place-self: center;
+        
     }
 }
 
@@ -153,6 +156,7 @@ audio {
 
 #game-button:hover {
     border-color: var(--color-dark-transparent);
+    
 }
 
 #game-button:active {
@@ -235,4 +239,40 @@ audio {
 
 .active {
     animation: flash 1s infinite;
+}
+
+/* boxisar div grejs*/
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.long-box {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    padding: 2em;
+    box-sizing: border-box;
+
+    border: 1em solid;
+    border-color: darkblue;
+
+}
+
+.left {
+    margin-right: 1em;
+}
+
+.right {
+    margin-left: 1em;
+}
+
+.small-box {
+    flex: 1;
+    padding: 1em;
+    border: 2px solid;
+    margin-bottom: 5em;
+    box-sizing: border-box;
 }
