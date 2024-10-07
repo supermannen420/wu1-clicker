@@ -22,11 +22,19 @@
     --space-4xl-5xl: clamp(7.88rem, calc(7.14rem + 3.7vw), 10rem);
 }
 
+html {
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
 body {
     background-color: var(--color-light);
     color: var(--color-dark);
     font-family: sans-serif;
     font-size: var(--step-0);
+   
 }
 
 h1 {
@@ -84,7 +92,7 @@ audio {
 
 .hero img {
     width: 100%;
-    height: 17vh;
+    height: 23vh;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
@@ -113,12 +121,14 @@ audio {
 .game-hud {
     display: flex;
     justify-content: space-between;
+    min-width: 30ch;
+    size: 50%;
 }
 
 .game-currency {
     list-style: none;
     padding: 0;
-    background-color: blue;
+    
 }
 
 /* game-currency är en lista med list items */
@@ -141,17 +151,18 @@ audio {
 
 /* för spelelementet används #id som selektor för att skapa css reglerna */
 #game-button {
-    width: var(--space-4xl-5xl);
-    height: var(--space-4xl-5xl);
+    width: 100%;
+    height: 200px;
     font-size: var(--step-2);
-    background: url('../img/monster.png');
+    background: url('../img/monsterface.jpeg');
     background-size: cover;
     background-position: center;
-    border: 2px solid transparent;
+    
     color: var(--color-light);
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+
 }
 
 #game-button:hover {
@@ -210,7 +221,7 @@ audio {
 }
 
 .card:hover {
-    background-color: var(--color-lighter);
+    background-color: var(--color-dark-transparent);
 }
 
 .card p:not(.title) {
@@ -241,33 +252,40 @@ audio {
     animation: flash 1s infinite;
 }
 
+.w-100{
+    max-width: 53ch;
+}
+
 /* boxisar div grejs*/
 
 .main-container {
     display: flex;
     justify-content: space-between;
+    
+    background-color: darkslategrey;
 }
 
 .long-box {
     flex: 2;
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    padding: 2em;
+    background-color: rgb(52, 52, 52);
+    padding: .1em;
     box-sizing: border-box;
+    max-width: 40rem;
 
-    border: 1em solid;
-    border-color: darkblue;
+    border: .1em solid;
+    border-color: black;
+
 
 }
 
-.left {
-    margin-right: 1em;
-}
 
-.right {
-    margin-left: 1em;
-}
+
+
+
+
+
 
 .small-box {
     flex: 1;

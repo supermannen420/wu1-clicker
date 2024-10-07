@@ -58,3 +58,19 @@ Se classroom.
 GLHF!
 
 Tack [Malte](https://github.com/Mafrans) för lite ideér.
+
+
+
+## 7 oct
+
+jag har fixat så att allt är fördelade i olika rutor 
+
+jag fixade färgen
+
+la till en variabel som räknar exakt hur många monster som jag dödat
+
+la till en utmaning för att döda 1miljon monster
+
+la till ljud för uppdrag
+
+la till ljud för att köpa saker.
