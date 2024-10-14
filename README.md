@@ -74,3 +74,16 @@ la till en utmaning för att döda 1miljon monster
 la till ljud för uppdrag
 
 la till ljud för att köpa saker.
+
+
+
+## 14oct
+
+idag har jag lagt till regndroppar till hero
+
+jag har ändrat färgen på hela sidan och bytt hero till en blå stad
+
+jag testade lägga till en bild till mina containers men tycker inte de såg så bra ut
+
+jag ändrade bara färg
+

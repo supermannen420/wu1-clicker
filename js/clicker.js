@@ -279,3 +279,33 @@ function message(text, type) {
         p.parentNode.removeChild(p);
     }, 2000);
 }
+
+
+// Select the rain container inside the hero section
+const rainHeroContainer = document.getElementById('rain-hero-container');
+
+// Function to create a raindrop
+function createHeroRaindrop() {
+    const raindrop = document.createElement('div');
+    raindrop.classList.add('raindrop');
+
+    // Randomize the raindrop's position and animation speed
+    raindrop.style.left = `${Math.random() * 100}vw`;
+    raindrop.style.animationDuration = `${Math.random() * 0.5 + 0.5}s`;
+
+    // Add the raindrop to the hero rain container
+    rainHeroContainer.appendChild(raindrop);
+
+    // Remove raindrop after it has fallen
+    setTimeout(() => {
+        raindrop.remove();
+    }, 1000); // Adjust based on fall speed
+}
+
+// Function to continuously generate raindrops
+function generateHeroRain() {
+    setInterval(createHeroRaindrop, 50 ); // Create a new raindrop every 50ms
+}
+
+// Start generating rain in the hero section
+generateHeroRain();
