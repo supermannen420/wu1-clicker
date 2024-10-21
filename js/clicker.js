@@ -177,7 +177,11 @@ window.addEventListener('load', (event) => {
         upgradeList.appendChild(createCard(upgrade));
     });
     window.requestAnimationFrame(step);
+
+
 });
+
+
 
 /* En array med upgrades. Varje upgrade är ett objekt med egenskaperna name, cost
  * och amount. Önskar du ytterligare text eller en bild så går det utmärkt att

@@ -158,6 +158,10 @@ audio {
     justify-content: space-between;
     min-width: 30ch;
     size: 50%;
+    padding-left: 20px;
+    border: 1px solid rgb(106, 106, 106);  
+    border-radius: 10px;
+    background-color: rgb(106, 106, 106);  ;
 }
 
 .game-currency {
@@ -172,7 +176,10 @@ audio {
     justify-content: space-between;
     gap: var(--space-xs-s);
     
+    
 }
+
+
 
 @media (max-width: 30rem) {
     .game-hud {
@@ -180,6 +187,7 @@ audio {
     }
     .game-controls {
         place-self: center;
+        
         
     }
 }
@@ -189,14 +197,16 @@ audio {
     width: 100%;
     height: 200px;
     font-size: var(--step-2);
-    background: url('../img/monsterface.jpeg');
+    background: url('../img/bat.png');
     background-size: cover;
     background-position: center;
+    background-color: black;
     
     color: var(--color-light);
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+    border-radius: 10px;
 
 }
 
@@ -296,6 +306,35 @@ audio {
     max-width: 53ch;
 }
 
+#upgradelist div {
+    border-radius: 10px;  
+    border: 1px solid rgb(106, 106, 106);  
+    margin: 10px; 
+    padding: 15px; 
+    background-color: rgb(106, 106, 106);  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);  
+    
+  
+}
+
+#upgradelist div:hover {
+    background-color: #6e6e6e84;  /* Slightly darker background on hover */
+}
+
+
+
+h5{
+    border-radius: 10px;  
+    border: 1px solid rgb(106, 106, 106);  
+    margin: 10px; 
+    padding: 5px;
+    background-color: rgb(106, 106, 106);  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;   
+    font-size: 30px;
+    
+}
+
 /* boxisar div grejs*/
 
 .main-container {
@@ -316,7 +355,7 @@ audio {
 
     border: .1em solid;
     border-color: black;
-
+    border-radius: 10px;
 
 
 }
@@ -334,6 +373,7 @@ audio {
     border: 2px solid;
     margin-bottom: 5em;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 
